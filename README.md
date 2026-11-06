@@ -21,5 +21,19 @@ python -m http.server 8321
 纯静态站点，无构建依赖、无外部 CDN，可直接部署到 GitHub Pages：
 把仓库根目录设为发布源（branch `main` / root）即可。
 
+在线地址：https://maple7mi.github.io/dsh-14day/
+
+## 重新生成
+
+内容源文件是 `../DeepSeek学习/14天DeepSeek-Harness学习计划.md`。
+修改源文件后，在仓库根目录运行：
+
+```powershell
+python _build/build_site.py
+```
+
+会重新生成 `index.html`、`guide.html` 与站内搜索索引 `assets/search.js`
+（`_build/templates/` 是页面模板，`_build` 本身不会发布到线上）。
+
 内容基于 DSH 桌面版 0.2.1-rc.5（2026 年 11 月）的官方文档与配置整理；
 界面文案可能随版本变化，以实际看到的为准。
