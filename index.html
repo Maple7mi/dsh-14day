@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>14 天学会 DeepSeek Harness · 写给高中毕业生的零基础计划</title>
+<meta name="description" content="14 天学会 DeepSeek Harness：每天 60–90 分钟的零基础计划，含提示词手册、Agent Team 手册与自带插件目录。">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#0b1830">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f5fae'/%3E%3Ctext x='32' y='42' font-family='system-ui' font-size='23' font-weight='700' fill='white' text-anchor='middle'%3EDSH%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="./assets/style.css">
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+</head>
+<body class="page-home">
+
+<a class="skip-link" href="#main">跳到正文</a>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="./index.html">
+      <span class="brand-mark">DSH</span>
+      <span class="brand-text">14 天学会 DeepSeek Harness<small>写给高中毕业生的零基础计划</small></span>
+    </a>
+    <nav class="topnav" aria-label="站点导航">
+      <a href="./index.html" class="active">首页</a>
+      <a href="./guide.html">完整手册</a>
+      <a href="#download">下载</a>
+    </nav>
+    <div class="top-actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="切换主题" title="切换主题">🌙</button>
+    </div>
+  </div>
+  <div class="progress"><i id="progressBar"></i></div>
+</header>
+
+<section class="landing-hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <span class="hero-kicker"><span class="live-dot"></span>零基础 · 每天 60–90 分钟</span>
+      <h1>14 天，从「会聊天」<br>到<span class="grad">「会带 AI 干活」</span></h1>
+      <p class="sub">
+        这是一份写给高中毕业生的 DeepSeek Harness 学习计划：不用先学编程，每天一个概念 + 一个动手产出，
+        14 天后你能让 AI 自己读文件、写文档、查资料、组队干活，并交付一件拿得出手的作品。
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="./guide.html#day-1">开始第 1 天 →</a>
+        <a class="btn" href="./guide.html">阅读完整手册</a>
+        <a class="btn" href="./downloads/dsh-14day-plan.pdf" download>下载 PDF</a>
+      </div>
+      <div class="hero-stats">
+        <span>14 天逐日任务</span>
+        <span>67 页完整手册</span>
+        <span>提示词 · Agent Team · 插件</span>
+        <span>基于 DSH 0.2.1-rc.5</span>
+      </div>
+    </div>
+
+    <aside class="preview-card" aria-hidden="true">
+      <div class="preview-head"><b>完整手册 · 目录</b><span>14 DAYS</span></div>
+      <ul class="preview-list">
+        <li><span class="pn">01</span><span class="pt">认识 DSH：工作区、会话、第一次真任务</span><span class="ps">⭐</span></li>
+        <li><span class="pn">02</span><span class="pt">Agent 怎么工作：工具、权限、上下文</span><span class="ps">⭐</span></li>
+        <li><span class="pn">03</span><span class="pt">提示词基础：交办单六要素</span><span class="ps">⭐⭐</span></li>
+        <li><span class="pn">09</span><span class="pt">Agent Team：Lead、队友、共享任务板</span><span class="ps">⭐⭐⭐</span></li>
+        <li><span class="pn">12</span><span class="pt">插件进阶：市场、实验功能、自建技能</span><span class="ps">⭐⭐⭐</span></li>
+      </ul>
+      <div class="preview-foot"><span>提示词手册 · Agent Team 手册 · 插件目录</span><span>PDF 1.8 MB</span></div>
+    </aside>
+  </div>
+</section>
+
+<div class="stats-strip">
+  <div class="stat-item"><b>14</b><span>天，逐日任务</span></div>
+  <div class="stat-item"><b>67</b><span>页完整手册</span></div>
+  <div class="stat-item"><b>3</b><span>份专项手册（提示词 / Team / 插件）</span></div>
+  <div class="stat-item"><b>100%</b><span>每个概念都有动手产出</span></div>
+</div>
+
+<main class="landing-main" id="main">
+
+  <section class="section-block">
+    <div class="section-head reveal">
+      <div class="kicker">先看答案</div>
+      <h2>你点名的三个问题，手册里都有专门章节</h2>
+      <p>提示词怎么写得一次就做对？Agent Team 到底在协作什么？DSH 自带插件都有哪些、在哪开？先看一句话答案，再进正文练。</p>
+    </div>
+    <div class="grid-3">
+      <a class="q-card reveal" href="./guide.html#appendix-a">
+        <div class="q-icon">✍️</div>
+        <h3>提示词怎么写</h3>
+        <p>提示词是工作交办单：目标、背景、输入、约束、验收、输出格式。六格写满，普通模型也能干出专业活。</p>
+        <span class="q-link">附录 A · 10 条原则 + 12 个模板 →</span>
+        <span class="q-meta">对应第 3–5 天</span>
+      </a>
+      <a class="q-card reveal" href="./guide.html#appendix-b">
+        <div class="q-icon">👥</div>
+        <h3>什么叫 Agent Team</h3>
+        <p>你带一个项目组：会话是 Lead，可以创建有名字的队友，队友共享一块任务板、能互相发消息，你只负责定目标和验收。</p>
+        <span class="q-link">附录 B · 角色 / 工具 / 限制 / 示例 →</span>
+        <span class="q-meta">对应第 9–10 天</span>
+      </a>
+      <a class="q-card reveal" href="./guide.html#appendix-c">
+        <div class="q-icon">🧩</div>
+        <h3>自带插件有什么</h3>
+        <p>界面、能力、协作、实验四类，约 40 项能感知的功能；本机默认完全权限、插件市场默认没开——手册都标了。</p>
+        <span class="q-link">附录 C · 分组目录 + 本机开关状态 →</span>
+        <span class="q-meta">对应第 6、12 天</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section-block" id="roadmap">
+    <div class="section-head reveal">
+      <div class="kicker">路线图</div>
+      <h2>两周，从「会用」到「会带」</h2>
+      <p>第一周练个人生产力：界面 → 工作方式 → 提示词 → 长期记忆 → 插件技能 → 小项目。第二周练 AI 协作：子代理 → Agent Team → Workflow → 结营项目。</p>
+    </div>
+
+    <div class="week-block">
+      <div class="week-head reveal">
+        <span class="week-badge">第 1 周</span>
+        <h3>会用：把 DSH 用成生产力工具</h3>
+        <span>7 天 · 每天 60–90 分钟</span>
+      </div>
+      <div class="day-grid">
+        <a class="day-card" href="guide.html#day-1"><div class="day-card-top"><span class="day-num">01</span><span class="day-star">⭐</span></div><h3>认识 DSH</h3><p class="day-out">分清&quot;聊天 AI&quot;和&quot;Agent（智能体）&quot;；认识工作区、会话、模型、权限四样东西；完成第一个有交付物的任务。</p><span class="day-link">查看当天内容 →</span></a><a class="day-card" href="guide.html#day-2"><div class="day-card-top"><span class="day-num">02</span><span class="day-star">⭐</span></div><h3>Agent 怎么工作</h3><p class="day-out">看懂 DSH 的&quot;工作过程&quot;；亲手体验权限与审批；理解上下文为什么会越用越贵，学会三个省钱的习惯。</p><span class="day-link">查看当天内容 →</span></a><a class="day-card" href="guide.html#day-3"><div class="day-card-top"><span class="day-num">03</span><span class="day-star">⭐⭐</span></div><h3>提示词基础</h3><p class="day-out">掌握交办单六要素，能判断一条提示词为什么失败、怎么改。</p><span class="day-link">查看当天内容 →</span></a><a class="day-card" href="guide.html#day-4"><div class="day-card-top"><span class="day-num">04</span><span class="day-star">⭐⭐</span></div><h3>提示词进阶</h3><p class="day-out">学会四种&quot;高手动作&quot;：用 @ 精确投喂文件、用计划模式先审方案、让 DSH 反问你、用返工话术精准纠偏。</p><span class="day-link">查看当天内容 →</span></a><a class="day-card" href="guide.html#day-5"><div class="day-card-top"><span class="day-num">05</span><span class="day-star">⭐⭐</span></div><h3>让 DSH 记住你</h3><p class="day-out">给 DSH 建一套&quot;员工手册&quot;，让它每次开新会话都自动知道你的规矩；学会用文件而不是聊天记录来管理长期信息。</p><span class="day-link">查看当天内容 →</span></a><a class="day-card" href="guide.html#day-6"><div class="day-card-top"><span class="day-num">06</span><span class="day-star">⭐⭐</span></div><h3>自带插件与技能（上）</h3><p class="day-out">分清&quot;插件&quot;和&quot;技能&quot;；找到 DSH 的插件入口；用内置 Office 技能做出 Word / Excel / PDF 三份专业交付物。</p><span class="day-link">查看当天内容 →</span></a><a class="day-card" href="guide.html#day-7"><div class="day-card-top"><span class="day-num">07</span><span class="day-star">⭐⭐</span></div><h3>周复盘 + 小项目</h3><p class="day-out">把第一周的知识串起来，用 DSH 独立完成一个小项目并发布到 GitHub Pages；同时做一次周自测。</p><span class="day-link">查看当天内容 →</span></a>
+      </div>
+    </div>
+
+    <div class="week-block">
+      <div class="week-head reveal">
+        <span class="week-badge">第 2 周</span>
+        <h3>会带：让一群 AI 帮你干活</h3>
+        <span>7 天 · 含 Agent Team 实战与结营项目</span>
+      </div>
+      <div class="day-grid">
+        <a class="day-card" href="guide.html#day-8"><div class="day-card-top"><span class="day-num">08</span><span class="day-star">⭐⭐</span></div><h3>子代理</h3><p class="day-out">理解&quot;上下文隔离&quot;为什么重要；会用子代理（subagent）并行做独立调研；知道它和 Agent Team 的区别。</p><span class="day-link">查看当天内容 →</span></a><a class="day-card" href="guide.html#day-9"><div class="day-card-top"><span class="day-num">09</span><span class="day-star">⭐⭐⭐</span></div><h3>Agent Team（上）</h3><p class="day-out">搞清楚 Agent Team 是什么、由哪些角色组成；亲手让 DSH 组建一个 2 人小组，完成一份有依赖关系的产出；学会看&quot;智能体团队&quot;面板。</p><span class="day-link">查看当天内容 →</span></a><a class="day-card" href="guide.html#day-10"><div class="day-card-top"><span class="day-num">10</span><span class="day-star">⭐⭐⭐</span></div><h3>Agent Team（下）</h3><p class="day-out">完成一次接近真实项目的团队协作：多任务、有依赖、有审查、有 Lead 验收；同时学会控制成本和风险。</p><span class="day-link">查看当天内容 →</span></a><a class="day-card" href="guide.html#day-11"><div class="day-card-top"><span class="day-num">11</span><span class="day-star">⭐⭐⭐</span></div><h3>Workflow</h3><p class="day-out">理解 Workflow 和 Subagent / Agent Team 的分工；让 DSH 写一个 workflow，对多个文件做批量审查。</p><span class="day-link">查看当天内容 →</span></a><a class="day-card" href="guide.html#day-12"><div class="day-card-top"><span class="day-num">12</span><span class="day-star">⭐⭐⭐</span></div><h3>插件进阶</h3><p class="day-out">把插件页真正用起来：分清&quot;装了什么&quot;和&quot;这个会话能用什么&quot;；认识实验功能的代价；亲手写一个技能，让 DSH 以后按你的规程干活。</p><span class="day-link">查看当天内容 →</span></a><a class="day-card" href="guide.html#day-13"><div class="day-card-top"><span class="day-num">13</span><span class="day-star">⭐⭐⭐</span></div><h3>结营项目（上）</h3><p class="day-out">独立完成一次&quot;项目启动&quot;：定题、写规格、拆任务板、组建团队并开工。今天不追求做完，追求 做对 。</p><span class="day-link">查看当天内容 →</span></a><a class="day-card" href="guide.html#day-14"><div class="day-card-top"><span class="day-num">14</span><span class="day-star">⭐⭐⭐</span></div><h3>结营项目（下）</h3><p class="day-out">把项目收尾、发布、复盘，并给自己定下一个 30 天计划。今天做完，你就有了第一份&quot;AI 协作作品&quot;。</p><span class="day-link">查看当天内容 →</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-block">
+    <div class="section-head reveal">
+      <div class="kicker">怎么用</div>
+      <h2>每天三段，一天一个概念</h2>
+    </div>
+    <div class="how-grid">
+      <div class="how-card reveal">
+        <h3>读概念 20 分钟</h3>
+        <p>先弄清<b>为什么</b>，再看界面长什么样。概念都配了类比，不需要编程基础。</p>
+      </div>
+      <div class="how-card reveal">
+        <h3>动手 50 分钟</h3>
+        <p>跟着步骤做，<b>提示词直接复制</b>、改方括号里的内容。每天都有一个能看见的产出（文件、网页、报告）。</p>
+      </div>
+      <div class="how-card reveal">
+        <h3>打勾 10 分钟</h3>
+        <p>对照「完成标准」逐条打勾，把坑记进笔记。<b>做不到就回看</b>，第二天先补练习再做新内容。</p>
+      </div>
+    </div>
+
+    <div class="week-block">
+      <div class="section-head reveal" style="margin-bottom:20px">
+        <div class="kicker">结营验收单</div>
+        <h2 style="font-size:23px">14 天后你会做到</h2>
+      </div>
+      <ul class="kit-list reveal">
+        <li>独立新建工作区、会话，用一句清楚的话让 DSH 完成一件真事</li>
+        <li>写出带目标、背景、输入、约束、验收、输出格式的提示词</li>
+        <li>会用 <code>@</code> 引用文件、<code>/plan</code> 先计划、返工话术</li>
+        <li>有一个自己的 <code>AGENTS.md</code>，让 DSH 记住你的规矩</li>
+        <li>用 DSH 做过 Word / Excel / PDF 至少各一份</li>
+        <li>亲手组建过一次 Agent Team（≥2 队友 + 共享任务板）并验收</li>
+        <li>会用子代理并行调研，会用 Workflow 批量处理</li>
+        <li>有一个发布到 GitHub 的作品</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section-block">
+    <div class="section-head reveal">
+      <div class="kicker">现在开始</div>
+      <h2>今晚 10 分钟就能起步</h2>
+    </div>
+    <div class="quickstart reveal">
+      <ol>
+        <li><b>建工作区</b>：在 DSH 左侧栏「添加工作区」，选 <code>E:\AI-Learning\DSH练习</code>（没有就先建目录）。</li>
+        <li><b>发第一个任务</b>：新开会话，粘贴手册第 1 天的「只读目录说明」提示词，等它产出 <code>notes/day01.md</code>。</li>
+        <li><b>看工作过程</b>：点开它的工具调用卡片，看它读了几次、写了几次——这就是第 2 天要讲的内容。</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section-block" id="download">
+    <div class="section-head reveal">
+      <div class="kicker">下载</div>
+      <h2>把整份计划带走</h2>
+      <p>同一份内容三种格式：网页版随时查，PDF 适合打印/平板，Word 可编辑批注，Markdown 可放进 Git 仓库。</p>
+    </div>
+    <div class="download-grid">
+      <a class="download-card reveal" href="./downloads/dsh-14day-plan.pdf" download>
+        <span class="file-badge file-pdf">PDF</span>
+        <h3>完整手册 · 打印版</h3>
+        <p>67 页，排版好的 PDF，适合打印或在平板上读。</p>
+        <span class="size">1.8 MB</span>
+      </a>
+      <a class="download-card reveal" href="./downloads/dsh-14day-plan.docx" download>
+        <span class="file-badge file-docx">DOCX</span>
+        <h3>完整手册 · Word 版</h3>
+        <p>可编辑、可批注；想改内容或加自己的笔记用这份。</p>
+        <span class="size">111 KB</span>
+      </a>
+      <a class="download-card reveal" href="./downloads/dsh-14day-plan.md" download>
+        <span class="file-badge file-md">MD</span>
+        <h3>Markdown 源文件</h3>
+        <p>纯文本源文件，方便放进 Git 仓库、做版本管理。</p>
+        <span class="size">121 KB</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="landing-foot">
+  <div class="foot-inner">
+    <div>
+      <b>14 天学会 DeepSeek Harness</b><br>
+      写给高中毕业生的零基础计划 · 2026 年 11 月版<br>
+      <span class="muted">基于 DSH 桌面版 0.2.1-rc.5 的官方文档与配置整理</span>
+    </div>
+    <div>
+      <a href="./guide.html">完整手册</a> · <a href="./guide.html#appendix-a">提示词手册</a> ·
+      <a href="./guide.html#appendix-b">Agent Team 手册</a> · <a href="./guide.html#appendix-c">插件目录</a><br>
+      <span class="muted">界面文案可能随版本变化，以你实际看到的为准。</span>
+    </div>
+  </div>
+</footer>
+
+<script src="./assets/app.js"></script>
+</body>
+</html>
